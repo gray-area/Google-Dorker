@@ -39,25 +39,6 @@ def dorking(domain):
     f.write(f'<a target="_blank" href="{url}">Interesting extensions</a><br>')
     f.close()
 
-    # VENDORKING
-    k = f'https://www.{domain}'
-    ke = re.findall('\.\w.*\.', str(k))
-    key = re.findall('\w.*\w', str(ke[0]))
-    keyword = domain
-    f = open(f'./{domain}/vendorking.html', 'a')
-    f.write(
-        f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"> <title>Vendor Dorks for {keyword}</title> </head> <body><br>')
-    vendors = ['.atlassian.net', 'bitbucket.org', 'bitpaste.app', 'codebeautify.org', 'codepad.co', 'codepad.org', 'codepen.io', 'codeshare.io', 'coggle.it', 'dotnetfiddle.net', 'dpaste.com', 'dpaste.org', 'github.com', 'gitlab.com', 'gitter.im', 'hastebin.com', 'heypasteit.com',
-               'ide.geeksforgeeks.org', 'ideone.com', 'jsdelivr.net', 'justpaste.it', 'libraries.io', 'npm.runit.com', 'npmjs.com', 'papaly.com', 'paste.debian.net', 'paste.org', 'paste2.org', 'pastebin.com', 'pastehtml.com', 'phpfiddle.org', 'prezi.com', 'repl.it', 'scribd.com', 'snipplr.com', 'trello.com']
-    for vendor in vendors:
-        url = f"https://www.google.com/search?q=site%3A%22{vendor}%22+%22{keyword}%22"
-        f.write(f'<a target="_blank" href="{url}">{vendor}</a><br>')
-    inurl_vendors = ["gitlab"]
-    for x in inurl_vendors:
-        url = f"https://www.google.com/search?q=inurl%3A%22{x}%22+%22{keyword}%22"
-        f.write(f'<a target="_blank" href="{url}">{x}</a><br>')
-    f.close()
-
     # GITHUB DORKING
     f = open(f'./{domain}/github-dorking.html', 'a')
     f.write(
