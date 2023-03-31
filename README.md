@@ -3,9 +3,9 @@ Automate Dorking Faster and Better than Ever.
 
 ## What can it do?
 1. Google Dorking
-2. Vendor Dorking
-3. Github Dorking
-4. Shodan Dorking
+2. Github Dorking
+3. Shodan Dorking
+
 
 ## Get nDorker
 ```bash
