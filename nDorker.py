@@ -32,8 +32,8 @@ def dorking(domain):
     # Important stuffs
     f.write('<h4>Interesting Dorks</h4>')
     url = f"https://www.google.com/search?q=site%3A.{domain}+intext%3A+%22index+of+%2F%22"
-    #f.write(f'<a target="_blank" href="{url}">Index of /</a><br>')
-    #url = f"https://www.google.com/search?q=site%3A.{domain}+allintext%3A+api+|+api_key+|+api key+|+apiKey+|+api.txt"
+    f.write(f'<a target="_blank" href="{url}">Index of /</a><br>')
+    url = f"https://www.google.com/search?q=site%3A.{domain}+api"
     f.write(f'<a target="_blank" href="{url}">api.txt ===</a><br>')
     url = f"https://www.google.com/search?q=site%3A.{domain}+db_password+%3D%3D%3D"
     f.write(f'<a target="_blank" href="{url}">db_password ===</a><br>')
