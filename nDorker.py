@@ -32,7 +32,9 @@ def dorking(domain):
     # Important stuffs
     f.write('<h4>Interesting Dorks</h4>')
     url = f"https://www.google.com/search?q=site%3A.{domain}+intext%3A+%22index+of+%2F%22"
-    f.write(f'<a target="_blank" href="{url}">Index of /</a><br>')
+    #f.write(f'<a target="_blank" href="{url}">Index of /</a><br>')
+    #url = f"https://www.google.com/search?q=site%3A.{domain}+allintext%3A+api+|+api_key+|+api key+|+apiKey+|+api.txt"
+    f.write(f'<a target="_blank" href="{url}">api.txt ===</a><br>')
     url = f"https://www.google.com/search?q=site%3A.{domain}+db_password+%3D%3D%3D"
     f.write(f'<a target="_blank" href="{url}">db_password ===</a><br>')
     url = f"https://www.google.com/search?q=site%3A.{domain}+ext%3Aenv+|+ext%3Alog+|+ext%3Asql+|+ext%3Ayml+|+ext%3Apem+|+ext%3Aini+|+ext%3Alogs+|+ext%3Aibd+|+ext%3Atxt+|+ext%3Aphp.txt+|+ext%3Aold+|+ext%3Akey+|+ext%3Afrm+|+ext%3Abak+|+ext%3Azip+|+ext%3Aswp+|+ext%3Aconf+|+ext%3Adb+|+ext%3Aconfig+|+ext%3Aovpn+|+ext%3Asvn+|+ext%3Agit+|+ext%3Acfg+|+ext%3Aexs+|+ext%3Adbf+|+ext%3Amdb+ext%3Apem+ext%3Apub+ext%3Ayaml+ext%3Azip+ext%3Aasc+ext%3Axls+ext%3Axlsx"
